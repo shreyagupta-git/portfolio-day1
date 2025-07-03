@@ -1,53 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>  My Portfolio </title>
-    <link rel ="stylesheet" href="style.css"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <nav>
-        <div class="logo"></div>
-            <ul class="navbar">
-               
-            <li><a href="#about">About</a></li>
-              <li><a href ="skills" >Skills</a></li>
-                <li><a href="project">Projects</a></li>
-                  <li><a href="#contact"> Contacts</a></li>
-        </ul>
-        </div>
-    </nav>
-    <section class="hero">
-        <h1>Hii, I am Shreya Gupta </h1>
-    <p> An Aspiring Web developer</p>
-<button >Hire Me</button></section>
-<section class ="about "id="about">
-    <div class ="text">
-        <h2>About me </h2>
-        <p> Hello, I am Shreya Gupta, a passionate and curious web development student with a knowledge
-             in HTML, CSS, and JavaScript(basics). I'm excited to bring my creativity,
-             attention to detail, and eagerness to learn to a real-world development team.
-              Looking forward to growing as a developer and contributing wherever I can! </p>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="logo"></div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <!-- Hero Section -->
+<header id="hero">
+  <div class="hero-glass">
+    <h1>Hi, I'm <span>Shreya Gupta</span></h1>
+    <p>Web Developer | Learner | Creator</p>
+    <a href="resume.pdf" class="btn">Download Resume</a>
+  </div>
+</header>
+
+
+  <!-- About Section -->
+ <section id="about" class="about">
+  <div class="about-content">
+    <img src="img.jpg" >
+    <div class="about-text">
+      <h2>About Me</h2>
+      <p>
+        Hello! I'm Shreya Gupta, a passionate and dedicated BCA student with a keen interest in web development and technology. I enjoy turning complex problems into simple, beautiful, and intuitive solutions. Currently, I’m learning full-stack development and gaining industry experience through real-time projects and internships.
+      </p>
+      <p>
+        My goal is to become a skilled software developer and contribute to impactful tech innovations while continuously growing in the field.
+      </p>
     </div>
+  </div>
 </section>
-<section class="skills ">
-    <h2> Skills</h2> 
-<div class="skills-grid">
-   <img src="OIP (3).jpg">
-   <img src ="OIP (4).jpg">
-    <img src ="OIP.jpg">
-    <img src ="OIP (1).jpg">
-    <img src ="OIP (2).jpg">
-</div></section>
-<section class="contact">
-    <h2> Contact</h2>
-    <form class="contactform">
-        <input type="text" placeholder="Name"/>
-         <input type="text" placeholder="Email"/>
-          <input type="text" placeholder="Messages"/>
-          <button> submit</button>
-    </form> 
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+  <h2>Skills</h2>
+  <div class="skill-cards">
+    <div class="card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C" />
+      <p>C</p>
+    </div>
+    <div class="card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" />
+      <p>C++</p>
+    </div>
+    <div class="card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" />
+      <p>HTML</p>
+    </div>
+    <div class="card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" />
+      <p>CSS</p>
+    </div>
+    <div class="card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
+      <p>JavaScript (Basics)</p>
+    </div>
+  </div>
 </section>
+
+  <!-- Projects Section -->
+ <section id="projects" class="projects">
+  <h2>Projects</h2>
+
+  <div class="project-item">
+    <h3>Amazon Clone</h3>
+    <p>
+      A responsive e-commerce landing page inspired by Amazon's UI. Built using HTML and
+      CSS with a clean layout and modern design practices.
+    </p>
+    <a href="https://github.com/shreyagupta-git/Amazon-clone" target="_blank" rel="noopener noreferrer">
+      View on GitHub
+    </a>
+  </div>
+
+  <div class="project-item">
+    <h3>Tic Tac Toe Game</h3>
+    <p>
+      A basic Tic Tac Toe game built using HTML, CSS, and JavaScript. Two players can 
+      take turns playing on the browser with real-time win logic.
+    </p>
+    <a href="https://github.com/shreyagupta-git/Tic-Tac-Toe" target="_blank" rel="noopener noreferrer">
+      View on GitHub
+    </a>
+  </div>
+</section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Name" required />
+      <input type="email" placeholder="Email" required />
+      <textarea placeholder="Message"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
 </body>
 </html>
+  
+  
+  
